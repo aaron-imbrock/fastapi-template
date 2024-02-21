@@ -252,6 +252,32 @@ files = [
 toml = ["tomli"]
 
 [[package]]
+name = "dev-dependencies"
+version = "0.0.4"
+description = "An opinionated library of dev-time dependencies"
+optional = false
+python-versions = ">=3.11,<4.0"
+files = [
+    {file = "dev_dependencies-0.0.4-py3-none-any.whl", hash = "sha256:3e2cc92d9f1148382d8c6ad98b71fcbb53cc0e5c063215cd6371cf4945a37b39"},
+    {file = "dev_dependencies-0.0.4.tar.gz", hash = "sha256:09bc021b2bf0f0658e3f198eafe4f2e1a2792b3e0dcea909459b1770baad01e4"},
+]
+
+[package.dependencies]
+black = "*"
+hypothesis = "*"
+mypy = "*"
+pydantic = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-emoji = "*"
+pytest-md = "*"
+pytest-mock = "*"
+pytest-xdist = "*"
+ruff = "*"
+toml = "*"
+types-toml = "*"
+
+[[package]]
 name = "execnet"
 version = "2.0.2"
 description = "execnet: rapid multi-Python deployment"
@@ -1057,4 +1083,4 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "8f0424c4200ab2fdc697a5ec7e26fe56497efbdf00607fc7e08034042080e82f"
+content-hash = "12a016386e8422e7dbb01de2ed20f591054a1410eacd76d9407e162a14332327"

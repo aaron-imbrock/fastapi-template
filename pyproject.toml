@@ -10,6 +10,19 @@ authors = ["Aaron Imbrock <aimbrock@gmail.com>"]
 readme = "README.md"
 license = "MIT"
 packages = [{ include = "fastapi_template" }]
+homepage = "https://github.com/aaron-imbrock/aa-fastapi-template"
+keyworks = ["fastapi"]
+classifiers = [
+"Development Status :: 3 - Alpha",
+“License :: OSI Approved :: MIT License”,
+"Programming Language :: Python :: 3.10",
+"Framework :: FastAPI",
+]
+include = [
+"LICENSE",
+"PKG-INFO",
+"ruff.toml",
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -20,7 +33,7 @@ uvicorn = "^0.27.1"
 python-dotenv = "^1.0.1"
 sqlmodel = "^0.0.16"
 sqlalchemy = "^2.0.27"
-asyncpg = "^0.29.0"
+# asyncpg = "^0.29.0"
 psycopg2-binary = "^2.9.9"
 
 [tool.poetry.group.dev.dependencies]
