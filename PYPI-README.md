@@ -1,18 +1,28 @@
-
 # AA FastAPI Template
 
-A robust and sensible baseline for kick-starting any new FastAPI application, along with optional opinionated development and test dependencies.
+A robust and sensible baseline for kick-starting any new FastAPI application. This template provides a comprehensive setup for developing high-performance web applications with FastAPI, including optional, opinionated development and testing dependencies to enhance your development workflow.
+
+## Prerequisites
+
+- Python 3.10 or higher
+- pip (Python package installer)
 
 ## Installation
+
+The base package provides the essential tools for creating FastAPI applications.
+While `[tests]` adds testing libraries.
+And the `[dev]` option installs both testing and development tools.
 
     # Using pip:
     pip install aa-fastapi-template
 
     # tests
-    ping install aa-fastapi-template[tests]
+    pip install aa-fastapi-template[tests]
 
     # dev
-    ping install aa-fastapi-template[dev]
+    pip install aa-fastapi-template[dev]
+
+## Package Options
 
 Included within each package are:
 
@@ -28,3 +38,10 @@ Included within each package are:
 | python-dotenv        | pytest-emoji |              |
 | sqlalchemy           |             |               |
 | sqlmodel             |             |               |
+
+## Contributing
+
+We welcome contributions to the AA FastAPI Template! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+    Issues: Use GitHub's issue tracker to send bug reports or feature requests.
+    Pull Requests: Submit pull requests with your changes/fixes.
