@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")"
+
+. ./clear_dist.sh
+
+echo "
+    Beginning build of new package version ...
+"
+echo $1
+[[ $1 == "minor" ]] && poetry version minor  || poetry version patch
+
+poetry lock
+awk 'BEGIN {printf "Checking syntax of pyproject.toml: "} {printf "%s", $0} END {print ""}' < <(poetry check)
+poetry export --without-hashes -E dev -o requirements.txt
+# poetry publish --build -r pypi
+# poetry publish --build
