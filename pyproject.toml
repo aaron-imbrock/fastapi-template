@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aa-fastapi-template"
-author = [
+authors = [
   {name = "Aaron Imbrock", email = "aaron@sizza.net"},
 ]
 maintainers = [
@@ -14,7 +14,7 @@ classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
-  "Development Status :: 4 - Production/Stable",
+  "Development Status :: 4 - Beta",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
@@ -26,7 +26,7 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.10"
-version = "0.12.3"
+version = "0.13.1"
 dependencies = [
   "asyncpg",
   "environs",
