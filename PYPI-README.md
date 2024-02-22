@@ -41,5 +41,5 @@ Included within each package are:
 
 We welcome contributions to the AA FastAPI Template! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-    Issues: Use the [GitHub Issues page](https://github.com/aaron-imbrock/aa-fastapi-template/issues)
-    Pull Requests: Submit pull requests with your changes/fixes.
+- Issues: Use the [GitHub Issues page](https://github.com/aaron-imbrock/aa-fastapi-template/issues)
+- Pull Requests: Submit pull requests with your changes/fixes.

@@ -26,7 +26,7 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.10"
-version = "0.13.6"
+version = "0.13.7"
 dependencies = [
   "asyncpg",
   "environs",
