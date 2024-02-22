@@ -9,8 +9,6 @@ A robust and sensible baseline for kick-starting any new FastAPI application. Th
 
 ## Installation
 
-The base package provides the essential tools for creating FastAPI applications. While `[tests]` adds testing libraries, the `[dev]` option installs both testing and development tools.
-
     # Using pip:
     pip install aa-fastapi-template
 
@@ -20,22 +18,25 @@ The base package provides the essential tools for creating FastAPI applications.
     # dev
     pip install aa-fastapi-template[dev]
 
+The base package provides the essential tools for creating FastAPI applications. While `[tests]` only adds testing libraries, the `[dev]` option installs both testing and development tools.
+
 ## Package Options
 
 Included within each package are:
 
-| aa-fastapi-template         | aa-fastapi-template[tests]       | aa-fastapi-template[dev]           |
-| :---                | :---       | :--- |
-| fastapi                    | + aa-fastapi-template         | + aa-fastapi-template[tests] |
-| asyncpg              | pytest      | black             |
-| environs             | pytest-mock | httpx         |
-| uvicorn              | hypothesis  | ruff         |
-| mypy                 | pytest-cov  | toml          |
-| psycopg2-binary      | pytest-xdist | types-toml        |
-| pydantic             | pytest-md   |               |
-| python-dotenv        | pytest-emoji |              |
-| sqlalchemy           |             |               |
-| sqlmodel             |             |               |
+| aa-fastapi-template    | aa-fastapi-template[tests]  | aa-fastapi-template[dev]  |
+|------------------------|-----------------------------|---------------------------|
+| asyncpg                | + aa-fastapi-template       | + aa-fastapi-template[tests] |
+| environs               | hypothesis                  | black                     |
+| fastapi                | pytest                      | httpx                     |
+| mypy                   | pytest-cov                  | ruff                      |
+| psycopg2-binary        | pytest-emoji                | toml                      |
+| pydantic               | pytest-md                   | types-toml                |
+| python-dotenv          | pytest-mock                 |                           |
+| sqlalchemy             | pytest-xdist                |                           |
+| sqlmodel               |                             |                           |
+| uvicorn                |                             |                           |
+
 
 ## Contributing
 
