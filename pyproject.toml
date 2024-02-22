@@ -26,7 +26,7 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.10"
-version = "0.13.1"
+version = "0.13.6"
 dependencies = [
   "asyncpg",
   "environs",
@@ -62,7 +62,7 @@ dev = [
 [project.urls]
 Documentation = "https://github.com/aaron-imbrock/aa-fastapi-template"
 Homepage = "https://pypi.org/project/aa-fastapi-template/"
-Issues = "https://github.com/aaron-imbrock/aa-fastapi-template"
+Issues = "https://github.com/aaron-imbrock/aa-fastapi-template/issues"
 Repository = "https://github.com/aaron-imbrock/aa-fastapi-template"
 
 [project.scripts]

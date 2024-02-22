@@ -9,9 +9,7 @@ A robust and sensible baseline for kick-starting any new FastAPI application. Th
 
 ## Installation
 
-The base package provides the essential tools for creating FastAPI applications.
-While `[tests]` adds testing libraries.
-And the `[dev]` option installs both testing and development tools.
+The base package provides the essential tools for creating FastAPI applications. While `[tests]` adds testing libraries, the `[dev]` option installs both testing and development tools.
 
     # Using pip:
     pip install aa-fastapi-template
@@ -43,5 +41,5 @@ Included within each package are:
 
 We welcome contributions to the AA FastAPI Template! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-    Issues: Use GitHub's issue tracker to send bug reports or feature requests.
+    Issues: Use the [GitHub Issues page](https://github.com/aaron-imbrock/aa-fastapi-template/issues)
     Pull Requests: Submit pull requests with your changes/fixes.
