@@ -2,6 +2,10 @@
 
 A robust and sensible baseline for kick-starting any new FastAPI application. This template provides a comprehensive setup for developing high-performance web applications with FastAPI, including optional, opinionated development and testing dependencies to enhance your development workflow.
 
+As of v0.15.0 all dependencies are pinned. The only exceptions being `black`, `ruff`, and `httpx`.
+
+This package isn't intended to be used in the same environment as other projects. Since the dependencies here are pinned doing so may lead to conflicts.
+
 ## Prerequisites
 
 - Python 3.10 or higher
@@ -18,7 +22,7 @@ A robust and sensible baseline for kick-starting any new FastAPI application. Th
     # dev
     pip install aa-fastapi-template[dev]
 
-The base package provides the essential tools for creating FastAPI applications. While `[tests]` only adds testing libraries, the `[dev]` option installs both testing and development tools.
+The base package provides the essential tools for creating FastAPI applications. While `[tests]` adds testing libraries, the `[dev]` option installs both the testing and development tools.
 
 ## Package Options
 
