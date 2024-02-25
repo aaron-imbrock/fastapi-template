@@ -38,7 +38,7 @@ Included within each package are:
 | pydantic               | pytest-md                   | types-toml                |
 | python-dotenv          | pytest-mock                 |                           |
 | sqlalchemy             | pytest-xdist                |                           |
-| sqlmodel               |                             |                           |
+| sqlmodel               | tox                         |                           |
 | uvicorn                |                             |                           |
 
 
