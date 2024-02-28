@@ -26,7 +26,7 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.10"
-version = "0.15.10"
+version = "0.16.0"
 dependencies = [
   "asyncpg == 0.29.0",
   "environs == 10.3.0",
@@ -35,7 +35,7 @@ dependencies = [
   "psycopg2-binary == 2.9.9",
   "pydantic == 2.6.2",
   "python-dotenv == 1.0.1",
-  "sqlalchemy == 2.027",
+  "sqlalchemy == 2.0.27",
   "sqlmodel == 0.0.16",
   "uvicorn == 0.27.1",
 ]
@@ -45,17 +45,17 @@ tests = [
   "pytest == 8.0.2",
   "pytest-mock == 3.12.0",
   "hypothesis == 6.98.11",
-  "pytest-cov = 4.1.0",
-  "pytest-xdist 3.5.0",
+  "pytest-cov == 4.1.0",
+  "pytest-xdist == 3.5.0",
   "pytest-md == 0.2.0",
-  "pytest-emoji = 0.2.0",
+  "pytest-emoji == 0.2.0",
   "tox == 4.13.0",
-  ]
+]
 dev = [
   "aa-fastapi-template[tests]",
   "black == 24.2.0",
-  "httpx == 0.27.0"
-  "isort == 5.13.2"
+  "httpx == 0.27.0",
+  "isort == 5.13.2",
   "ruff == 0.2.2",
   "toml == 0.10.2",
   "types-toml == 0.10.8.7",
@@ -85,14 +85,15 @@ disallow_untyped_defs = true
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--verbose --doctest-modules --junitxml=junit/test-results.xml --cov=dev_dependencies --cov=tests --cov-report html --cov-report term --cov-fail-under=100 --capture=no"
+addopts = "--verbose --import-mode=importlib --doctest-modules --junitxml=junit/test-results.xml --cov=dev_dependencies --cov=tests --cov-report html --cov-report term --cov-fail-under=100--capture=no"
 testpaths = ["tests"]
 
 [tool.ruff]
 src = ["src"]
 fix = true
 show-fixes = true
-show-source = true
+output-format = "full"
+#output-format = "concise"
 
 [tool.ruff.lint]
 select = [
@@ -104,7 +105,7 @@ select = [
   "W",  # pycodestyle warning
 ]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/*" = ["E721"]
 
 [tool.ruff.lint.pycodestyle]
