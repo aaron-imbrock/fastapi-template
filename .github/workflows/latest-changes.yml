@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.ACTIONS_TOKEN }}
-      - uses: docker://tiangolo/latest-changes@0.3.0
+      - uses: docker://tiangolo/latest-changes:0.3.0
         with:
           token: ${{ secrets.ACTIONS_TOKEN }}
           latest_changes_file: docs/release-notes.md
