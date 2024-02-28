@@ -2,7 +2,7 @@
 
 A robust and sensible baseline for kick-starting any new FastAPI application. This template provides a comprehensive setup for developing high-performance web applications with FastAPI, including optional, opinionated development and testing dependencies to enhance your development workflow.
 
-As of v0.15.0 all dependencies are pinned. The only exceptions are `black`, `ruff`, and `httpx`.
+As of v0.15.10 all dependencies are pinned. Testing and build quality are still a work in progress though. For now everything should work but please check the `Contributing` section below if you find issues.
 
 This package isn't really intended to be used in the same environment as other projects. Since the dependencies here are pinned care should be taken to avoid version conflicts pulled in for other packages.
 
