@@ -34,6 +34,8 @@ poetry publish --build -r test-pypi
 
 ### Install Dependencies
 
+Dependencies listed in the `pyproject.toml` file can be installed using `pip install .[dev]`
+
 ```shell
 python3 -m pip install --upgrade pip
 pip install --upgrade setuptools build twine
