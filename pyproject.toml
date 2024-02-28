@@ -29,7 +29,7 @@ requires-python = ">=3.10"
 version = "0.16.0"
 dependencies = [
   "asyncpg == 0.29.0",
-  "environs == 10.3.0",
+  "environs = 10.3.0",
   "fastapi == 0.110.0",
   "mypy == 1.8.0",
   "psycopg2-binary == 2.9.9",
@@ -83,31 +83,5 @@ check_untyped_defs = true
 no_implicit_reexport = true
 disallow_untyped_defs = true
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "--verbose --import-mode=importlib --doctest-modules --junitxml=junit/test-results.xml --cov=dev_dependencies --cov=tests --cov-report html --cov-report term --cov-fail-under=100--capture=no"
-testpaths = ["tests"]
 
-[tool.ruff]
-src = ["src"]
-fix = true
-show-fixes = true
-output-format = "full"
-#output-format = "concise"
-
-[tool.ruff.lint]
-select = [
-  "B",  # flake8-bugbear
-  "E",  # pycodestyle error
-  "F",  # pyflakes
-  "I",  # isort
-  "UP", # pyupgrade
-  "W",  # pycodestyle warning
-]
-
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["E721"]
-
-[tool.ruff.lint.pycodestyle]
-ignore-overlong-task-comments = true
 
