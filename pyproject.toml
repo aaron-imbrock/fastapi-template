@@ -26,10 +26,10 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.10"
-version = "0.16.0"
+version = "0.16.5"
 dependencies = [
   "asyncpg == 0.29.0",
-  "environs = 10.3.0",
+  "environs == 10.3.0",
   "fastapi == 0.110.0",
   "mypy == 1.8.0",
   "psycopg2-binary == 2.9.9",
@@ -60,6 +60,11 @@ dev = [
   "toml == 0.10.2",
   "types-toml == 0.10.8.7",
 ]
+build = [
+  "setuptools",
+  "build",
+  "twine",
+]
 
 [project.urls]
 Documentation = "https://github.com/aaron-imbrock/aa-fastapi-template"
@@ -73,6 +78,16 @@ Repository = "https://github.com/aaron-imbrock/aa-fastapi-template"
 ##
 ## All Tool Configs Below
 ##
+
+[tool.isort]
+lines_between_types = 1
+combine_as_imports = true
+known_first_party = ['fastapi_template', 'tests']
+
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[tool.setuptools]
+packages = ["fastapi_template"]
+
 [tool.mypy]
 plugins = ["pydantic.mypy"]
 follow_imports = "silent"
