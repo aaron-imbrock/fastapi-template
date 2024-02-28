@@ -11,7 +11,7 @@ This package isn't really intended to be used in the same environment as other p
 - Python 3.10 or higher
 - pip (Python package installer)
 
-## Installation
+## Usage
 
     # Using pip:
     pip install aa-fastapi-template
@@ -22,7 +22,7 @@ This package isn't really intended to be used in the same environment as other p
     # dev
     pip install aa-fastapi-template[dev]
 
-The base package provides the essential tools for creating FastAPI applications. 
+The base package provides the essential tools for creating FastAPI applications.
 
 While `[tests]` adds testing libraries, the `[dev]` option installs both the testing and development tools.
 
@@ -35,14 +35,13 @@ Included within each package are:
 | asyncpg                | + aa-fastapi-template       | + aa-fastapi-template[tests] |
 | environs               | hypothesis                  | black                     |
 | fastapi                | pytest                      | httpx                     |
-| mypy                   | pytest-cov                  | ruff                      |
-| psycopg2-binary        | pytest-emoji                | toml                      |
-| pydantic               | pytest-md                   | types-toml                |
-| python-dotenv          | pytest-mock                 |                           |
+| mypy                   | pytest-cov                  | isort                     |
+| psycopg2-binary        | pytest-emoji                | ruff                      |
+| pydantic               | pytest-md                   | types                     |
+| python-dotenv          | pytest-mock                 | types-toml                |
 | sqlalchemy             | pytest-xdist                |                           |
 | sqlmodel               | tox                         |                           |
 | uvicorn                |                             |                           |
-
 
 ## Contributing
 
