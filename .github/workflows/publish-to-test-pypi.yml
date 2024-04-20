@@ -1,4 +1,4 @@
-name: pypi
+name: Publish to TestPyPI
 
 on:
   release:
@@ -17,12 +17,15 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install setuptools wheel twine
+          python3 -m pip install --upgrade pip
+          pip install --upgrade setuptools build twine
       - name: Build and publish
         env:
           TWINE_USERNAME: ${{ secrets.PYPI_USERS }}
-          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+          TWINE_PASSWORD: ${{ secrets.TEST_AA_FASTAPI_TEMPLATE }}
         run: |
-          python setup.py sdist bdist_wheel
-          twine upload dist/*
+          echo "/dist should be empty. Clearing it just in case."
+          rm /dist/*
+          echo "Beginning build of new package version."
+          python3 -m build
+          twine upload --repository testpypi dist/*
