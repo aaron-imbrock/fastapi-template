@@ -16,7 +16,6 @@ classifiers = [
   "Natural Language :: English",
   "Development Status :: 4 - Beta",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Framework :: FastAPI"
@@ -25,8 +24,8 @@ description = "A robust and sensible baseline for kick-starting any new FastAPI 
 license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
-requires-python = ">=3.10"
-version = "0.25.0"
+requires-python = ">=3.11"
+version = "0.26.5"
 dependencies = [
   "asyncpg == 0.29.0",
   "environs == 10.3.0",

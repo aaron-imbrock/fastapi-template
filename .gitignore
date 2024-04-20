@@ -62,3 +62,6 @@ README.html
 
 # ruff
 .ruff_cache
+
+# IDEA / VSCODE
+.idea
