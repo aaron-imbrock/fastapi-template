@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=43.0.0"]
+requires = ["setuptools>=43.0.0", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -25,7 +25,7 @@ license = { file = "LICENSE" }
 keywords = ["fastapi"]
 readme = "PYPI-README.md"
 requires-python = ">=3.11"
-version = "0.26.8"
+dynamic = ["version"]
 dependencies = [
   "asyncpg == 0.29.0",
   "environs == 10.3.0",
@@ -86,6 +86,13 @@ known_first_party = ['fastapi_template', 'tests']
 # https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
 [tool.setuptools]
 packages = ["fastapi_template"]
+
+# https://setuptools-scm.readthedocs.io/en/latest/usage/
+# https://xebia.com/blog/an-updated-guide-to-setuptools-and-pyproject-toml/
+[tool.setuptools_scm]
+version_file = "fastapi_template/_version.py"
+version_scheme = "release-branch-semver"
+local_scheme = "no-local-version"
 
 [tool.mypy]
 plugins = ["pydantic.mypy"]

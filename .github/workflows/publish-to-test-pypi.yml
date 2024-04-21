@@ -24,8 +24,6 @@ jobs:
           TWINE_USERNAME: ${{ secrets.PYPI_USERS }}
           TWINE_PASSWORD: ${{ secrets.TEST_AA_FASTAPI_TEMPLATE }}
         run: |
-          echo "/dist should be empty. Clearing it just in case."
-          rm /dist/*
           echo "Beginning build of new package version."
           python3 -m build
           twine upload --repository testpypi dist/*
