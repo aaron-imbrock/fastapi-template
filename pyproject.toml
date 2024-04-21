@@ -61,6 +61,7 @@ dev = [
 ]
 build = [
   "setuptools",
+  "setuptools_scm",
   "build",
   "twine",
 ]
