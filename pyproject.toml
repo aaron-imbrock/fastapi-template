@@ -36,7 +36,7 @@ dependencies = [
   "python-dotenv == 1.0.1",
   "sqlalchemy == 2.0.27",
   "sqlmodel == 0.0.16",
-  "uvicorn == 0.27.1",
+  "uvicorn == 0.29.0",
 ]
 
 [project.optional-dependencies]
