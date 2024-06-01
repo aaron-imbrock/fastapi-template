@@ -41,7 +41,7 @@ dependencies = [
 
 [project.optional-dependencies]
 tests = [
-  "pytest == 8.1.1",
+  "pytest == 8.2.1",
   "pytest-mock == 3.14.0",
   "hypothesis == 6.98.11",
   "pytest-cov == 5.0.0",
