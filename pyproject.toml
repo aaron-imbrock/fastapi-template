@@ -35,7 +35,7 @@ dependencies = [
   "pydantic == 2.6.2",
   "python-dotenv == 1.0.1",
   "sqlalchemy == 2.0.27",
-  "sqlmodel == 0.0.16",
+  "sqlmodel == 0.0.19",
   "uvicorn == 0.27.1",
 ]
 
