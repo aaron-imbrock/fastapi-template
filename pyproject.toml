@@ -50,6 +50,8 @@ testing = [
   "pytest-md == 0.2.0",
   "pytest-emoji == 0.2.0",
   "tox == 4.13.0",
+  "toml == 0.10.2",
+  "types-toml == 0.10.8.20240310",
 ]
 dev = [
   "aa-fastapi-template[tests]",
@@ -80,6 +82,25 @@ Repository = "https://github.com/aaron-imbrock/aa-fastapi-template"
 ## All Tool Configs Below
 ##
 
+[tool.pytest.ini_options]
+addopts = "--cov=fastapi_template"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == '__main__'",
+    "# def __repr__",
+    "# def __str__"
+]
+
 [tool.isort]
 lines_between_types = 1
 combine_as_imports = true
@@ -97,6 +118,7 @@ version_scheme = "release-branch-semver"
 local_scheme = "no-local-version"
 
 [tool.mypy]
+mypy_path = "fastapi_template"
 plugins = ["pydantic.mypy"]
 follow_imports = "silent"
 warn_redundant_casts = true
