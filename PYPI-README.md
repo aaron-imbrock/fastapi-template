@@ -30,9 +30,9 @@ While `[tests]` adds testing libraries, the `[dev]` option installs both the tes
 
 Included within each package are:
 
-| aa-fastapi-template    | aa-fastapi-template[tests]  | aa-fastapi-template[dev]  |
+| aa-fastapi-template    | aa-fastapi-template[testing]  | aa-fastapi-template[dev]  |
 |------------------------|-----------------------------|---------------------------|
-| asyncpg                | + aa-fastapi-template       | + aa-fastapi-template[tests] |
+| asyncpg                | + aa-fastapi-template       | + aa-fastapi-template[testing] |
 | environs               | hypothesis                  | black                     |
 | fastapi                | pytest                      | httpx                     |
 | mypy                   | pytest-cov                  | isort                     |
